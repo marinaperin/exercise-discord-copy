@@ -1,8 +1,15 @@
 /* Remember to download Noto Sans and Montserrat fonts from Google Fonts: https://fonts.google.com/ */
 
+
+/* Generici */
+
 :root{
     font-family: "Noto Sans", sans-serif;
     font-size: 18px;
+    --bg-beige: hsl(0, 0%, 96%);
+    --color-indigo: hsl(247, 100%, 65%);
+    --lighter-indigo: hsl(247, 100%, 75%);
+    --lighter-black: hsl(0, 0%, 13%); 
 }
 
 *{
@@ -19,3 +26,91 @@ img{
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
+
+button {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.download-white {
+    filter: invert();
+    padding-right: .5rem;
+}
+
+.indigo-buttons {
+    background-color: var(--color-indigo);
+    border: none;
+    outline: none;
+    padding: .8rem 2rem;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+}
+
+.indigo-buttons:hover {
+    background-color: var(--lighter-indigo);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* Header*/
+
+/* Main */
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.5rem 20rem;
+}
+
+main>:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+main>section:nth-child(even) {
+    background-color: var(--bg-beige);
+}
+
+main h2 {
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+}
+
+main p {
+    line-height: 2;
+}
+
+.text-block {
+    margin-left: 6rem;
+}
+
+#vertical-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.5rem 12em;
+    text-align: center;
+}
+
+#vertical-info h2 {
+    margin-bottom: 1rem;
+}
+
+#vertical-info p {
+    padding-inline: 16rem;
+}
+
+#last-info-img {
+    width: 80%;
+}
+
+#stars {
+    margin-bottom: -1.2rem;
+}
+
+#vertical-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
