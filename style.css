@@ -7,8 +7,8 @@
     font-family: "Noto Sans", sans-serif;
     font-size: 18px;
     --bg-beige: hsl(0, 0%, 96%);
-    --color-indigo: hsl(247, 100%, 65%);
-    --lighter-indigo: hsl(247, 100%, 75%);
+    --color-indigo: hsl(238, 100%, 65%);
+    --lighter-indigo: hsl(238, 100%, 75%);
     --lighter-black: hsl(206, 9%, 15%); 
 }
 
@@ -18,9 +18,9 @@
     padding: 0;
 }
 
-img{
+/*img{
     max-width: 100%;
-}
+}*/
 
 .extra-bold{
     font-family: 'Montserrat', sans-serif;
@@ -52,6 +52,36 @@ button, select {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.white-buttons {
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    outline: none;
+    padding: .8rem 2rem;
+    border-radius: 30px;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+}
+
+.white-buttons:hover {
+    color: var(--lighter-indigo);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.black-buttons {
+    background-color: hsl(0, 0%, 0%);
+    border: none;
+    outline: none;
+    padding: .8rem 2rem;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+}
+
+.black-buttons:hover {
+    background-color: var(--lighter-black);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 a {
     display: flex;
     text-decoration: none;
@@ -63,6 +93,78 @@ a:hover {
 }
 
 /* Header*/
+
+header {
+    background-color: var(--color-indigo);
+    color: white;
+    background-image: url(img/hero-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: .8rem;
+    margin-inline: 2rem;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    padding: .5rem 1rem;
+    font-weight: 500;
+}
+
+nav .white-buttons {
+    font-size: inherit;
+    padding: .8em 1em;
+}
+
+.jumbotron{
+    text-align: center;
+}
+
+.jumbo-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 30rem;
+    margin-top: 8rem;
+    margin-bottom: -3rem;
+    z-index: 1;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.background {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    z-index: 0;
+    margin-top: -8rem;
+}
+
+.jumbo-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding-bottom: -8rem;
+}
+
+.jumbo-buttons button {
+    margin: .8rem;
+}
+
 
 /* Main */
 
