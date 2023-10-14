@@ -52,6 +52,16 @@ button, select {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Header*/
 
 /* Main */
@@ -144,6 +154,14 @@ footer select{
     margin-top: 2rem;
 }
 
+.language img {
+    height: 1rem;
+}
+
+.language {
+    display: flex;
+}
+
 .social {
     padding: 3rem 0;
 }
@@ -155,6 +173,7 @@ footer select{
 .indigo-titles {
     color: var(--color-indigo);
     margin-bottom: 1rem;
+    padding-inline: .5rem;
 }
 
 .footer-right {
@@ -163,13 +182,19 @@ footer select{
     margin-bottom: 2rem;
 }
 
-.footer-right p{
-    padding: .5rem 2rem;
+.footer-right a{
+    flex-direction: column;
+    flex-grow: 1;
+    padding: .5rem;
+}
+
+.footer-right section {
+    padding-inline: 2rem;
 }
 
 .footer-bottom{
     border-top: 1px solid var(--color-indigo);
-    margin-inline: 10%;
+    margin-inline: 18%;
     padding-block: 2rem 4rem;
     display: flex;
     justify-content: space-between;
